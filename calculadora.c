@@ -1,9 +1,8 @@
 //LIBRERIAS USADAS
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdbool.h>
-#include <string.h>
 #include <unistd.h> 
+#include <math.h>
 //DEFINIR LAS VARIABLES DE LOGO Y SUS COLORES
 #define COLOR_ROJO "\033[31m"      
 #define COLOR_AZUL "\033[34m"      
@@ -14,7 +13,7 @@
 #define estu 5  
 #define asig 3  
 
-// Animaci¢n de impresi¢n del logo
+// AnimaciÂ¢n de impresiÂ¢n del logo
 void imprimir_con_animacion(const char *texto) {
     while (*texto) {
         putchar(*texto++);
@@ -40,8 +39,8 @@ void imprimir_cuadro_resultados(int promedios[], int maximos[], int minimos[]) {
     for (int i = 0; i < estu; i++) {
         printf("* Estudiante %d:                                                                 *\n", i + 1);
         printf("*   Promedio: %2d                                                                *\n", promedios[i]);
-        printf("*   Calificaci¢n m s alta: %2d                                                   *\n", maximos[i]);
-        printf("*   Calificaci¢n m s baja: %2d                                                   *\n", minimos[i]);
+        printf("*   CalificaciÂ¢n mÂ s alta: %2d                                                   *\n", maximos[i]);
+        printf("*   CalificaciÂ¢n mÂ s baja: %2d                                                   *\n", minimos[i]);
         if (promedios[i] >= 6) {
             printf("*   Estado: " COLOR_VERDE "Aprobado" COLOR_BLANCO "                                                            *\n");
             aprobados++;
@@ -53,7 +52,7 @@ void imprimir_cuadro_resultados(int promedios[], int maximos[], int minimos[]) {
         printf(COLOR_BLANCO "*********************************************************************************\n");
     }
     
-    printf(COLOR_BLANCO "*********************************************************************************\n"); // L¡nea final del cuadro
+    printf(COLOR_BLANCO "*********************************************************************************\n"); // LÂ¡nea final del cuadro
     printf("* Total de aprobados: %2d                                                        *\n", aprobados);
     printf("* Total de reprobados: %2d                                                       *\n", reprobados);
     printf(COLOR_BLANCO "*********************************************************************************\n"); // Cierre del cuadro final
@@ -82,16 +81,16 @@ int main() {
     printf("\n\n");
 
     printf(COLOR_BLANCO "*********************************************************************************\n");
-    printf("*                            " COLOR_ROJO "Descripci¢n del Problema:" COLOR_BLANCO "                          *\n");
+    printf("*                            " COLOR_ROJO "DescripciÂ¢n del Problema:" COLOR_BLANCO "                          *\n");
     printf("* "COLOR_AZUL"  Una escuela desea implementar un programa en C que le permita gestionar las"COLOR_BLANCO" *\n");
-    printf("* "COLOR_AZUL"calificaciones de un grupo de estudiantes en varias asignaturas. Adem s de  "COLOR_BLANCO"  *\n");
-    printf("*"COLOR_AZUL" gestionar las calificaciones, el programa debe calcular y mostrar informaci¢n"COLOR_BLANCO" *\n");
+    printf("* "COLOR_AZUL"calificaciones de un grupo de estudiantes en varias asignaturas. AdemÂ s de  "COLOR_BLANCO"  *\n");
+    printf("*"COLOR_AZUL" gestionar las calificaciones, el programa debe calcular y mostrar informaciÂ¢n"COLOR_BLANCO" *\n");
     printf("*"COLOR_AZUL" relevante como el promedio de calificaciones por estudiante y por asignatura,"COLOR_BLANCO" *\n");
-    printf("* "COLOR_AZUL"la calificaci¢n m s alta y baja, y cu ntos estudiantes aprobaron cada       "COLOR_BLANCO"  *\n");
+    printf("* "COLOR_AZUL"la calificaciÂ¢n mÂ s alta y baja, y cuÂ ntos estudiantes aprobaron cada       "COLOR_BLANCO"  *\n");
     printf("* "COLOR_AZUL"asignatura.                                                                 "COLOR_BLANCO"  *\n");
     printf(""COLOR_BLANCO"*********************************************************************************\n" COLOR_RESET);
 
-    // Definici¢n de variables
+    // DefiniciÂ¢n de variables
     int cal[estu][asig]; 
     int suma, promedio;   
     int max, min;         
@@ -103,7 +102,7 @@ int main() {
         for (int j = 0; j < asig; j++) {
             bool valido = false;
             while (!valido) {
-                printf("Ingrese la calificaci¢n del estudiante %d para la asignatura %d (1-10): ", i + 1, j + 1);
+                printf("Ingrese la calificaciÂ¢n del estudiante %d para la asignatura %d (1-10): ", i + 1, j + 1);
                 
                 char entrada[10];
                 if (fgets(entrada, sizeof(entrada), stdin) != NULL) {
@@ -113,10 +112,10 @@ int main() {
                         cal[i][j] = calificacion;
                         valido = true; 
                     } else {
-                        printf("Error: La calificaci¢n debe ser un n£mero entero entre 1 y 10. Int‚ntalo de nuevo.\n");
+                        printf("Error: La calificaciÂ¢n debe ser un nÂ£mero entero entre 1 y 10. Intâ€šntalo de nuevo.\n");
                     }
                 } else {
-                    printf("Error de entrada. Int‚ntalo de nuevo.\n");
+                    printf("Error de entrada. Intâ€šntalo de nuevo.\n");
                 }
 
                 limpiar_buffer();
