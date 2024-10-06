@@ -6,7 +6,7 @@ Este es un breve resumen de lo que hace mi repositorio.
 
 Puedes ver el video a continuación:
 
-[![Video Title](https://gifyu.com/image/SB9JZ)
+![Descripción del GIF](https://gifyu.com/image/SB9JZ)
 
 ## Descripción del Repositorio
 
