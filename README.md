@@ -1,20 +1,7 @@
-# Bienvenido a Mi Repositorio
+# CALCULADORA
 
-Este es un breve resumen de lo que hace mi repositorio.
+ESTA ES LA TAREA DE LA CALCULADORA EL TALLER #1 
 
-## Video de Demostración
-
-Puedes ver el video a continuación:
-
-![Descripción del GIF](https://gifyu.com/image/SB9JZ)
-
-## Descripción del Repositorio
-
-Aquí puedes detallar de qué trata tu proyecto, cómo instalarlo y cómo usarlo.
-
-### Instalación
-```bash
-# Comandos para instalar el proyecto
-git clone https://github.com/tu_usuario/tu_repositorio.git
-cd tu_repositorio
+# UN VIDEO DE COMO ES EL PROGRAMA EN SHELL O EN LA CONSOLA
+https://github.com/user-attachments/assets/7eaba01b-c408-4912-b6d2-cbd2dd59f9c9
 
