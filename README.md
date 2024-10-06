@@ -6,7 +6,7 @@ Este es un breve resumen de lo que hace mi repositorio.
 
 Puedes ver el video a continuación:
 
-[![Video Title](https://img.youtube.com/vi/ID_DEL_VIDEO/0.jpg)](https://www.youtube.com/watch?v=ID_DEL_VIDEO)
+[![Video Title](https://gifyu.com/image/SB9JZ)
 
 ## Descripción del Repositorio
 
